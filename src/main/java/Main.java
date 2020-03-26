@@ -12,7 +12,7 @@ public class Main {
         apartamentL2.setCena(800000);
         apartamentL2.setMiasto("Warszawa");
         apartamentL2.setPowierzchnia(80);
-
+///
         ApartamentL apartamentL3 = new ApartamentL();
         apartamentL3.setCena(500000);
         apartamentL3.setMiasto("Gdańsk");
