@@ -23,7 +23,6 @@ public class Main {
         apartamentList.add(apartamentL2);
         apartamentList.add(apartamentL3);
 
-
         for (ApartamentL one : apartamentList) {
             System.out.println(apartamentList);
         }
