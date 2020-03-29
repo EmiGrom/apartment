@@ -8,8 +8,6 @@ public class Main {
         Apartment apartment2 = new Apartment("Poznań", 260, 40000);
         Apartment apartment3 = new Apartment("Kraków", 310, 8000);
 
-        apartment1.getFullPrice();
-
         List<Apartment> apartmentList = new ArrayList<>();
         apartmentList.addAll(Arrays.asList(apartment1, apartment2, apartment3));
         System.out.print(apartmentList);
