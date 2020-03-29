@@ -5,8 +5,12 @@ import lombok.Data;
 @AllArgsConstructor
 public class Apartment {
 
-    private String miasto;
-    private double powierzchnia;
-    private double cenazametr;
-    private double fullPrice;
+    private String city;
+    private double area;
+    private double price;
+
+    public void getFullPrice() {
+        price = 0.95 * price;
+        System.out.println(price);
+    }
 }

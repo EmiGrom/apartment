@@ -4,30 +4,40 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        double a = 0.95;
-        //double srednia;
-        Apartment apartment1 = new Apartment("ząbki", 26, 5000, 26 * 5000 * a);
-        Apartment apartment2 = new Apartment("WWA", 260, 40000, 10 * 4000 * a);
-        Apartment apartment3 = new Apartment("Pilawa", 310, 8000, 30 * 8000 * a);
+        Apartment apartment1 = new Apartment("Warszawa", 26, 5000);
+        Apartment apartment2 = new Apartment("Poznań", 260, 40000);
+        Apartment apartment3 = new Apartment("Kraków", 310, 8000);
 
+        apartment1.getFullPrice();
 
         List<Apartment> apartmentList = new ArrayList<>();
         apartmentList.addAll(Arrays.asList(apartment1, apartment2, apartment3));
         System.out.print(apartmentList);
 
-        for (Apartment apartment : apartmentList) {
-            System.out.println(apartment.getMiasto());
-            System.out.println("cena po zniżce: " + (apartment.getPowierzchnia() * apartment.getCenazametr()));
-        }
+        System.out.println("List of apartments: " + apartmentList);
+
+        System.out.println("Price of apartment 1: " + apartment1.getPrice());
+        System.out.println("Price after discount: ");
+        apartment1.getFullPrice();
+
+        System.out.println("Price of apartment 2: " + apartment2.getPrice());
+        System.out.println("Price after discount: ");
+        apartment2.getFullPrice();
+
+        System.out.println("Price of apartment 3: " + apartment3.getPrice());
+        System.out.println("Price after discount: ");
+        apartment3.getFullPrice();
+
         double sum = 0;
         for (Apartment one : apartmentList) {
-            sum += one.getFullPrice();
+            sum += one.getPrice();
         }
-        System.out.format("średnia cena mieszkań to: %.2f", sum / apartmentList.size());
+
+        System.out.format("Average cost of an apartments: %.2f", sum / apartmentList.size());
+        System.out.println("\n");
     }
-
-
 }
+
 
 //Zadanie Mieszkania
 //Stwórz klasę Apartment , która będzie zawierała informacje o mieście, w którym
