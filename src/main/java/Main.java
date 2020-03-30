@@ -33,6 +33,51 @@ public class Main {
 
         System.out.format("Average cost of an apartments: %.2f", sum / apartmentList.size());
         System.out.println("\n");
+
+        Dom dom1 = new Dom();
+        dom1.setLiczbaPokoi(4);
+        dom1.setLiczbaOkien(8);
+        dom1.setLiczbaMetrów(45);
+        dom1.setLiczbaMieszkań(1);
+        dom1.setCzyGaraż(false);
+        dom1.setCzyOgródek(true);
+        dom1.setCzyJestSiłownia(false);
+
+        System.out.println("\nDom prezentuje się następująco: " + dom1);
+
+        Dom dom2 = new Dom();
+        dom2.setLiczbaPokoi(9);
+        dom2.setLiczbaOkien(15);
+        dom2.setLiczbaMetrów(110);
+        dom2.setLiczbaMieszkań(1);
+        dom2.setCzyGaraż(true);
+        dom2.setCzyOgródek(true);
+        dom2.setCzyJestSiłownia(false);
+
+        System.out.println("Dom prezentuje się następująco: " + dom2);
+
+        Blok blok1 = new Blok();
+        blok1.setLiczbaPokoi(5);
+        blok1.setLiczbaOkien(7);
+        blok1.setLiczbaMetrów(85000);
+        blok1.setLiczbaMieszkań(12);
+        blok1.setCzyGaraż(true);
+        blok1.setCzyOgródek(false);
+        blok1.setCzyJestSiłownia(false);
+
+        System.out.println("Blok prezentuje się następująco: " + blok1);
+
+        Blok blok2 = new Blok();
+        blok2.setLiczbaPokoi(2);
+        blok2.setLiczbaOkien(4);
+        blok2.setLiczbaMetrów(20000);
+        blok2.setLiczbaMieszkań(17);
+        blok2.setCzyGaraż(false);
+        blok2.setCzyOgródek(false);
+        blok2.setCzyJestSiłownia(true);
+
+        System.out.println("Blok prezentuje się następująco: " + blok2);
+
     }
 }
 

@@ -3,7 +3,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Apartment {
+public class Apartment extends Budynek {
 
     private String city;
     private double area;
