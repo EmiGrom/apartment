@@ -32,7 +32,6 @@ public class Main {
         }
 
         System.out.format("Average cost of an apartments: %.2f", sum / apartmentList.size());
-        System.out.println("\n");
 
         Dom dom1 = new Dom();
         dom1.setLiczbaPokoi(4);
@@ -43,7 +42,7 @@ public class Main {
         dom1.setCzyOgródek(true);
         dom1.setCzyJestSiłownia(false);
 
-        System.out.println("\nDom prezentuje się następująco: " + dom1);
+        System.out.println("\n\n" + dom1);
 
         Dom dom2 = new Dom();
         dom2.setLiczbaPokoi(9);
@@ -54,7 +53,7 @@ public class Main {
         dom2.setCzyOgródek(true);
         dom2.setCzyJestSiłownia(false);
 
-        System.out.println("Dom prezentuje się następująco: " + dom2);
+        System.out.println(dom2);
 
         Blok blok1 = new Blok();
         blok1.setLiczbaPokoi(5);
@@ -65,7 +64,7 @@ public class Main {
         blok1.setCzyOgródek(false);
         blok1.setCzyJestSiłownia(false);
 
-        System.out.println("Blok prezentuje się następująco: " + blok1);
+        System.out.println(blok1);
 
         Blok blok2 = new Blok();
         blok2.setLiczbaPokoi(2);
@@ -76,7 +75,7 @@ public class Main {
         blok2.setCzyOgródek(false);
         blok2.setCzyJestSiłownia(true);
 
-        System.out.println("Blok prezentuje się następująco: " + blok2);
+        System.out.println(blok2);
 
     }
 }
